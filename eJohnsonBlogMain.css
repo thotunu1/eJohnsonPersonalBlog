@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 650px;
+    grid-template-rows: 100px 50px 200px 200px 100px;
+    grid-gap: 30px;
+    padding: 50px;
+    grid-template-areas:
+    "hd"
+    "mi"
+    "main"
+    "sb"
+    "ft";
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
+    /*line-height: 60%;*/
+    padding: 10px;
+    background: #def8d6;
+}
+
+.headfoot{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+.menuBar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
+    justify-content: space-around;
+    background: #def8d6;
+
+}
+
+.mainCat{
+    color: #0e2584;;
+}
+
+.sideBarCat{
+    color: #770003;
+}
+
+.fa {
+    padding: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: white;
+    color: #3B5998;
+  }
+  
+  .fa-twitter {
+    background: white;
+    color: #55ACEE;
+  }
+  
+  .fa-linkedin {
+    background: white;
+    color: #007bb5;
+  }
+  
+  .fa-youtube {
+    background: white;
+    color: #bb0000;
+  }
+  
+  .fa-instagram {
+    background: white;
+    color: #125688;
+  }
+  
+
+#header{
+    grid-area: hd;
+    border-bottom: 5px double black;
+    font-family: 'Bangers', cursive;
+    text-shadow: 3px 3px black;
+    letter-spacing: 1px;
+}
+
+#main{
+    grid-area: main;
+}
+
+#sideBar{
+    grid-area: sb;
+}
+
+#menu{
+    grid-area: mi;
+}
+
+#footer{
+    grid-area: ft;
+    border-top: 5px double;
+}
+
+@media(min-width: 800px){
+.container{
+    display:grid;
+    grid-template-columns: auto 200px;
+    grid-template-rows: 100px 50px 200px 200px 100px;
+    grid-gap: 30px;
+    padding: 50px;
+    grid-template-areas:
+    "hd hd"
+    "mi mi"
+    "main sb"
+    "main sb"
+    "main sb"
+    "ft ft";
+
+}
+}

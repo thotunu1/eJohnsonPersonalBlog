@@ -147,6 +147,10 @@ img{
     grid-area: m2;
 }
 
+/*#blogPostPrev{
+    padding: 10px;
+}*/
+
 #sideBar{
     grid-area: sb;
     display: flex;

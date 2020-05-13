@@ -9,12 +9,13 @@ h2{
 h4{
     padding: 0px;
     margin: 0px;
+    font-size: large;
 }
 
 .container{
     display:grid;
     grid-template-columns: 650px;
-    grid-template-rows: 100px 50px 200px 200px 100px;
+    grid-template-rows: 100px 50px 200px 300px 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:
@@ -61,6 +62,10 @@ h4{
 .sideBarCat{
     color: #770003;
 }
+
+/*.archiveList{
+    display: flex;
+}*/
 
 .fa {
     padding: 20px;
@@ -132,7 +137,7 @@ h4{
 .container{
     display:grid;
     grid-template-columns: auto 200px;
-    grid-template-rows: 100px 50px 200px 200px 100px;
+    grid-template-rows: 100px 50px 200px 300px 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:

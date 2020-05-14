@@ -63,9 +63,9 @@ h4{
     color: #770003;
 }
 
-/*.archiveList{
-    display: flex;
-}*/
+.archiveList{
+    color: #106312;
+}
 
 .fa {
     padding: 20px;
@@ -122,6 +122,7 @@ h4{
     box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
     /*line-height: 60%;*/
     background: #def8d6;
+    text-align: center;
 }
 
 #menu{

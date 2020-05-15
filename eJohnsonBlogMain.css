@@ -9,6 +9,7 @@ h2{
 h4{
     padding: 0px;
     margin: 0px;
+    font-size: large;
 }
 
 img{
@@ -19,8 +20,8 @@ img{
 
 .container{
     display:grid;
-    grid-template-columns: 650px;
-    grid-template-rows: 100px 50px 200px 200px 200px 100px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px auto auto auto 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:
@@ -35,9 +36,7 @@ img{
 
 .box{
     display: flex;
-    /*flex-direction: column;*/
     box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
-    /*line-height: 60%;*/
     padding: 20px;
     background: #def8d6;
 }
@@ -69,7 +68,7 @@ img{
 }
 
 .button {
-    background-color: #3EDD84;
+    background-color: #106312;
     color: white;
     width: 90px;
     padding: 10px 18px;
@@ -77,10 +76,8 @@ img{
     text-align: center;
     text-decoration: none;
     display: block;
-    /*margin-top: 20px;
-    margin-left: 30px;*/
     margin-right: 70px;
-    font-size: 12px;
+    font-size: 17px;
     cursor: pointer;
     font-family: 'merriweather';
 }
@@ -91,6 +88,10 @@ img{
 
 .sideBarCat{
     color: #770003;
+}
+
+.archiveList{
+    color: #106312;
 }
 
 .fa {
@@ -147,14 +148,11 @@ img{
     grid-area: m2;
 }
 
-/*#blogPostPrev{
-    padding: 10px;
-}*/
-
 #sideBar{
     grid-area: sb;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #menu{
@@ -166,11 +164,11 @@ img{
     border-top: 5px double;
 }
 
-@media(min-width: 800px){
+@media(min-width: 960px){
 .container{
     display:grid;
     grid-template-columns: auto auto 200px;
-    grid-template-rows: 100px 50px 200px 200px 100px;
+    grid-template-rows: 100px 50px auto auto 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:
@@ -178,7 +176,6 @@ img{
     "mi mi mi"
     "m1 m1 sb"
     "m2 m2 sb"
-    /*"m1 m2 sb"*/
     "ft ft ft";
 
 }

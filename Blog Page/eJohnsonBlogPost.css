@@ -14,8 +14,8 @@ h4{
 
 .container{
     display:grid;
-    grid-template-columns: 650px;
-    grid-template-rows: 100px 50px 200px 300px 100px;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px auto auto 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:
@@ -30,10 +30,7 @@ h4{
 .box{
     display: flex;
     flex-direction: column;
-    /*box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);*/
-    /*line-height: 60%;*/
     padding: 10px;
-    /*background: #def8d6;*/
 }
 
 .headfoot{
@@ -79,6 +76,10 @@ h4{
     opacity: 0.7;
   }
 
+  .fa-home {
+    color: black;
+  }
+
   .fa-facebook {
     background: white;
     color: #3B5998;
@@ -120,7 +121,6 @@ h4{
 #sideBar{
     grid-area: sb;
     box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
-    /*line-height: 60%;*/
     background: #def8d6;
     text-align: center;
 }
@@ -134,11 +134,11 @@ h4{
     border-top: 5px double;
 }
 
-@media(min-width: 800px){
+@media(min-width: 960px){
 .container{
     display:grid;
     grid-template-columns: auto 200px;
-    grid-template-rows: 100px 50px 200px 300px 100px;
+    grid-template-rows: 100px 50px auto auto 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:

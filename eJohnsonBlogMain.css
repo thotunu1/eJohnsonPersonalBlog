@@ -1,6 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+h1{
+    font-size: 60px;
+    font-style: normal;
+    line-height: 1;
+    font-weight: 600;
+    color: #106312;
+}
+
 h2{
     padding: 0px;
     margin: 0px;
@@ -12,11 +20,9 @@ h4{
     font-size: large;
 }
 
-img{
-    width: 300px;
-    height: 150px;
-    border: white solid 5px;
-    }
+figcaption{
+    font-size: small;
+}
 
 .container{
     display:grid;
@@ -50,6 +56,12 @@ img{
     
 }
 
+.jarrMainAvatar {
+    height: 110px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+   }
+
 .menuBar{
     display: flex;
     align-items: center;
@@ -66,6 +78,12 @@ img{
     padding: 10px;
     margin-left: 20px;
 }
+
+.bodyImage{
+    width: 300px;
+    height: 150px;
+    border: white solid 5px;
+    }
 
 .button {
     background-color: #106312;
@@ -106,6 +124,10 @@ img{
     opacity: 0.7;
   }
 
+  .fa-seedling {
+    color: #106312;
+  }
+  
   .fa-facebook {
     background: white;
     color: #3B5998;

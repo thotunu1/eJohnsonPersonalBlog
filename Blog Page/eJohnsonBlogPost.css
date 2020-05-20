@@ -1,6 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+h1{
+  font-size: 60px;
+  font-style: normal;
+  line-height: 1;
+  font-weight: 600;
+  color: #106312;"
+}
+
 h2{
     padding: 0px;
     margin: 0px;
@@ -10,6 +18,10 @@ h4{
     padding: 0px;
     margin: 0px;
     font-size: large;
+}
+
+figcaption{
+  font-size: small;
 }
 
 .container{
@@ -39,8 +51,19 @@ h4{
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
-    
 }
+
+.jarrMainAvatar {
+  height: 110px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+ }
+
+ .jarrBlogAvatar{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+ }
 
 .menuBar{
     display: flex;
@@ -74,6 +97,10 @@ h4{
   
   .fa:hover {
     opacity: 0.7;
+  }
+
+  .fa-seedling {
+    color: #106312;
   }
 
   .fa-home {

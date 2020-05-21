@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 h1{
   font-size: 60px;
@@ -79,6 +80,7 @@ blockquote{
 
 .archiveList{
     color: #106312;
+    font-family: 'Lobster', cursive;
 }
 
 .authorInfo{

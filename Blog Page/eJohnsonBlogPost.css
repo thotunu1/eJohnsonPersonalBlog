@@ -24,6 +24,10 @@ figcaption{
   font-size: small;
 }
 
+blockquote{
+  font-size: large;
+}
+
 .container{
     display:grid;
     grid-template-columns: auto;
@@ -59,12 +63,6 @@ figcaption{
   border-radius: 50%;
  }
 
- .jarrBlogAvatar{
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
- }
-
 .menuBar{
     display: flex;
     align-items: center;
@@ -75,10 +73,6 @@ figcaption{
 
 }
 
-.mainCat{
-    color: #0e2584;;
-}
-
 .sideBarCat{
     color: #770003;
 }
@@ -86,6 +80,22 @@ figcaption{
 .archiveList{
     color: #106312;
 }
+
+.authorInfo{
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+}
+
+.blogAvatar { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+.blogPostInfo { 
+  grid-area: 1 / 2 / 2 / 3; 
+} 
 
 .fa {
     padding: 20px;
@@ -154,6 +164,17 @@ figcaption{
 
 #menu{
     grid-area: mi;
+}
+
+#jarrBlogAvatar{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
+}
+
+#authorName{
+  color: #0e2584;;
 }
 
 #footer{

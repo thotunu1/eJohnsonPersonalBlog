@@ -1,35 +1,7 @@
-
-/*@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-h1{
-  font-size: 60px;
-  font-style: normal;
-  line-height: 1;
-  font-weight: 600;
-  color: #106312;
-}
-
-h2{
-    padding: 0px;
-    margin: 0px;
-}
-
-h4{
-    padding: 0px;
-    margin: 0px;
-    font-size: large;
-}
-
-figcaption{
-  font-size: small;
-}*/
-
 blockquote{
   font-size: large;
 }
 
-/*Need to rename object*/
 .blogContainer{
   display:grid;
   grid-template-columns: auto 200px;
@@ -46,45 +18,11 @@ blockquote{
 
 }
 
-/*Need to rename object*/
 .blogBox{
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
-
-/*.headfoot{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.jarrMainAvatar {
-  height: 110px;
-  margin-bottom: 30px;
-  border-radius: 50%;
- }
-
-.menuBar{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
-    justify-content: space-around;
-    background: #def8d6;
-
-}
-
-.sideBarCat{
-    color: #770003;
-}
-
-.archiveList{
-    color: #106312;
-    font-family: 'Lobster', cursive;
-}*/
 
 .authorInfo{
   display: grid;
@@ -102,75 +40,20 @@ blockquote{
   grid-area: 1 / 2 / 2 / 3; 
 } 
 
-/*.fa {
-    padding: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
-
-  .fa-seedling {
-    color: #106312;
-  }*/
-
   .fa-home {
     color: black;
   }
-
-  /*.fa-facebook {
-    background: white;
-    color: #3B5998;
-  }
-  
-  .fa-twitter {
-    background: white;
-    color: #55ACEE;
-  }
-  
-  .fa-linkedin {
-    background: white;
-    color: #007bb5;
-  }
-  
-  .fa-youtube {
-    background: white;
-    color: #bb0000;
-  }
-  
-  .fa-instagram {
-    background: white;
-    color: #125688;
-  }
-  
-
-#header{
-    grid-area: hd;
-    border-bottom: 5px double black;
-    font-family: 'Bangers', cursive;
-    text-shadow: 3px 3px black;
-    letter-spacing: 1px;
-}*/
 
 #main{
     grid-area: main;
 }
 
-/*Need to rename object*/
 #sideBar{
     grid-area: sb;
     box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
     background: #def8d6;
     text-align: center;
 }
-
-/*#menu{
-    grid-area: mi;
-}*/
 
 #jarrBlogAvatar{
   height: 60px;
@@ -182,11 +65,6 @@ blockquote{
 #authorName{
   color: #0e2584;;
 }
-
-/*#footer{
-    grid-area: ft;
-    border-top: 5px double;
-}*/
 
 @media(max-width: 960px){
   .blogContainer{

@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import 'classCatagory.css';
-@import 'Responsive.css';
-@import url('BlogPage/eJohnsonBlogPost.css');
 
 h1{
     font-size: 60px;
@@ -26,25 +23,56 @@ h4{
 
 figcaption{
     font-size: small;
-}
+}*/
 
-/*.container{
+
+/*@media(min-width: 960px){*/
+.container{
     display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: 100px 50px auto auto auto 100px;
+    grid-template-columns: auto auto 200px;
+    grid-template-rows: 100px 50px auto auto 100px;
     grid-gap: 30px;
     padding: 50px;
     grid-template-areas:
-    "hd"
-    "mi"
-    "m1"
-    "m2"
-    "sb"
-    "ft";
+    "hd hd hd"
+    "mi mi mi"
+    "m1 m1 sb"
+    "m2 m2 sb"
+    "ft ft ft";
+    
+}
+
+
+@media(max-width: 960px){
+    .container{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100% 50px auto auto auto 100px;
+        grid-gap: 30px;
+        padding: 50px;
+        grid-template-areas:
+        "hd"
+        "mi"
+        "m1"
+        "m2"
+        "sb"
+        "ft";
+
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .bodyImage{
+        width: 100%;
+        height: auto;
+    }
 
 }
 
-.box{
+
+/*.box{
     display: flex;
     box-shadow: 0 0 8px 0 rgba(17,22,26,0.16), 0 4px 8px 0 rgba(17,22,26,0.08), 0 8px 16px 0 rgba(17,22,26,0.08);
     padding: 20px;
@@ -157,7 +185,7 @@ figcaption{
     background: white;
     color: #125688;
   }
- */ 
+  
 
 #header{
     grid-area: hd;
@@ -189,21 +217,6 @@ figcaption{
 #footer{
     grid-area: ft;
     border-top: 5px double;
-}
-
-/*@media(min-width: 960px){
-.container{
-    display:grid;
-    grid-template-columns: auto auto 200px;
-    grid-template-rows: 100px 50px auto auto 100px;
-    grid-gap: 30px;
-    padding: 50px;
-    grid-template-areas:
-    "hd hd hd"
-    "mi mi mi"
-    "m1 m1 sb"
-    "m2 m2 sb"
-    "ft ft ft";
-
-}
 }*/
+
+
